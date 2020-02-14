@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EA1DBC5A23F62B3F00D1E771 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA1DBC5923F62B3F00D1E771 /* main.cpp */; };
+		EA1DBC6B23F62B5E00D1E771 /* MovieManagerUI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA1DBC6123F62B5D00D1E771 /* MovieManagerUI.cpp */; };
+		EA1DBC6C23F62B5E00D1E771 /* MovieManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA1DBC6223F62B5D00D1E771 /* MovieManager.cpp */; };
+		EA1DBC6D23F62B5E00D1E771 /* Movies.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA1DBC6423F62B5D00D1E771 /* Movies.cpp */; };
+		EA1DBC6E23F62B5E00D1E771 /* Exceptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA1DBC6623F62B5D00D1E771 /* Exceptions.cpp */; };
+		EA1DBC6F23F62B5E00D1E771 /* Renter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA1DBC6823F62B5E00D1E771 /* Renter.cpp */; };
+		EA1DBC7023F62B5E00D1E771 /* lab3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA1DBC6A23F62B5E00D1E771 /* lab3.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +29,17 @@
 
 /* Begin PBXFileReference section */
 		EA1DBC5623F62B3F00D1E771 /* Lab3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lab3; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA1DBC5923F62B3F00D1E771 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		EA1DBC6023F62B5D00D1E771 /* MovieManagerUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieManagerUI.h; sourceTree = "<group>"; };
+		EA1DBC6123F62B5D00D1E771 /* MovieManagerUI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MovieManagerUI.cpp; sourceTree = "<group>"; };
+		EA1DBC6223F62B5D00D1E771 /* MovieManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MovieManager.cpp; sourceTree = "<group>"; };
+		EA1DBC6323F62B5D00D1E771 /* MovieManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieManager.h; sourceTree = "<group>"; };
+		EA1DBC6423F62B5D00D1E771 /* Movies.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Movies.cpp; sourceTree = "<group>"; };
+		EA1DBC6523F62B5D00D1E771 /* Movies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Movies.h; sourceTree = "<group>"; };
+		EA1DBC6623F62B5D00D1E771 /* Exceptions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Exceptions.cpp; sourceTree = "<group>"; };
+		EA1DBC6723F62B5D00D1E771 /* Renter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Renter.h; sourceTree = "<group>"; };
+		EA1DBC6823F62B5E00D1E771 /* Renter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Renter.cpp; sourceTree = "<group>"; };
+		EA1DBC6923F62B5E00D1E771 /* lab3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lab3.txt; sourceTree = "<group>"; };
+		EA1DBC6A23F62B5E00D1E771 /* lab3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lab3.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +72,17 @@
 		EA1DBC5823F62B3F00D1E771 /* Lab3 */ = {
 			isa = PBXGroup;
 			children = (
-				EA1DBC5923F62B3F00D1E771 /* main.cpp */,
+				EA1DBC6623F62B5D00D1E771 /* Exceptions.cpp */,
+				EA1DBC6A23F62B5E00D1E771 /* lab3.cpp */,
+				EA1DBC6923F62B5E00D1E771 /* lab3.txt */,
+				EA1DBC6223F62B5D00D1E771 /* MovieManager.cpp */,
+				EA1DBC6323F62B5D00D1E771 /* MovieManager.h */,
+				EA1DBC6123F62B5D00D1E771 /* MovieManagerUI.cpp */,
+				EA1DBC6023F62B5D00D1E771 /* MovieManagerUI.h */,
+				EA1DBC6423F62B5D00D1E771 /* Movies.cpp */,
+				EA1DBC6523F62B5D00D1E771 /* Movies.h */,
+				EA1DBC6823F62B5E00D1E771 /* Renter.cpp */,
+				EA1DBC6723F62B5D00D1E771 /* Renter.h */,
 			);
 			path = Lab3;
 			sourceTree = "<group>";
@@ -119,7 +144,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA1DBC5A23F62B3F00D1E771 /* main.cpp in Sources */,
+				EA1DBC6B23F62B5E00D1E771 /* MovieManagerUI.cpp in Sources */,
+				EA1DBC6F23F62B5E00D1E771 /* Renter.cpp in Sources */,
+				EA1DBC7023F62B5E00D1E771 /* lab3.cpp in Sources */,
+				EA1DBC6D23F62B5E00D1E771 /* Movies.cpp in Sources */,
+				EA1DBC6E23F62B5E00D1E771 /* Exceptions.cpp in Sources */,
+				EA1DBC6C23F62B5E00D1E771 /* MovieManager.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
