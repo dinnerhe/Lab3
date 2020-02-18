@@ -8,12 +8,14 @@ private:
     string first_name;
     string last_name;
 public:
-    int getid();
-    void setid(int);
-    string getfirst();
-    void setfirst(string);
-    string getlast();
-    void setlast(string);
+    Renter();
+    Renter(int, string, string);
+    int getRenterID();
+    void setRenterID(int);
+    string getRenterFirstName();
+    void setRenterFirstName(string);
+    string getRenterLastName();
+    void setRenterLastName(string);
     
 };
 #endif

@@ -1,15 +1,20 @@
 #include "Renter.h"
-int Renter::getid(){
+Renter::Renter(int rid, string rfname, string rlname){
+    this->renter_id = rid;
+    this->first_name = rfname;
+    this->last_name = rlname;
+}
+int Renter::getRenterID(){
     return this->renter_id;
 }
-void Renter::setid(int id){
+void Renter::setRenterID(int id){
     this->renter_id = id;
 }
-string Renter::getfirst(){
+string Renter::getRenterFirstName(){
     return this->first_name;
 }
-void Renter::setfirst(string fname){
+void Renter::setRenterFirstName(string fname){
     this->first_name = fname;
 }
-string Renter::getlast(){return this->last_name;}
-void Renter::setlast(string lname){this->last_name = lname;}
+string Renter::getRenterLastName(){return this->last_name;}
+void Renter::setRenterLastName(string lname){this->last_name = lname;}
