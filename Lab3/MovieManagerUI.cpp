@@ -11,3 +11,21 @@ void MovieManagerUI::printMenu(){
     cout<<"----------"<<endl;
     cout<<"Enter Command:"<<endl;
 }
+string MovieManagerUI::getCommand(){
+    string command;
+    bool valid = false;
+    while(not valid){
+        cin >> command;
+        if(command == "am"|| command == "rm" || command == "rr"||command == "p" ||command == "q"){valid = true;}
+    }
+    return command;
+}
+
+string MovieManagerUI::getMovieName(){
+    string name;
+    
+    cin >> name;
+    return name;
+}
+int getMovieCode();
+int getRenterID();

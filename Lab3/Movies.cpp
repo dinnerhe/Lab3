@@ -1,6 +1,12 @@
 #include "Movies.h"
-class RenterNotFoundException:public exception{};
-class InvalidRenterIDException:public exception{};
+Movies::Movies(){
+    this->movie_name = "DEFAULT";
+    this->movie_code = 0;
+}
+Movies::Movies(int mid, string mname){
+    this->movie_name = mname;
+    this->movie_code = mid;
+}
 int Movies::getMovieCode(){
     return this->movie_code;
 }
