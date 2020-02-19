@@ -4,14 +4,15 @@
 #include "Renter.h"
 class Movies{
 private:
-    int movie_code;
+    string movie_code;
     string movie_name;
     int copy_number;
     Renter renters[20];
+    void bubble_sort(Renter [], int);
 public:
     Movies();
-    Movies(int, string);
-    int getMovieCode();
+    Movies(string, string);
+    string getMovieCode();
     string getMovieName();
     int getRentedCopies();
     void rentMovie(Renter);

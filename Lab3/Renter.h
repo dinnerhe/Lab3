@@ -16,6 +16,6 @@ public:
     void setRenterFirstName(string);
     string getRenterLastName();
     void setRenterLastName(string);
-    
+    bool operator < (const Renter &);
 };
 #endif

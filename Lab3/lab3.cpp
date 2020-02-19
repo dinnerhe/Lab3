@@ -2,5 +2,8 @@
 
 int main()
 {
-	return 0;
+    MovieManager amo;
+    amo.run();
+    return 0;
+	
 }

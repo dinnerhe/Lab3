@@ -4,13 +4,13 @@
 #include "Movies.h"
 class MovieManagerUI{
 public:
-    void printMenu();
-    string getCommand();
-    string getMovieName();
-    int getMovieCode();
-    int getRenterID();
-    string getRenterFirstName();
-    string getRenterLastName();
-    void toUpper(string);
+    static void printMenu();
+    static string getCommand();
+    static string getMovieName();
+    static string getMovieCode();
+    static int getRenterID();
+    static string getRenterFirstName();
+    static string getRenterLastName();
+    static void toUpper(string &);
 };
 #endif

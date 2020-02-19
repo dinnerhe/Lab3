@@ -1,5 +1,5 @@
 #include "MovieManagerUI.h"
-void MovieManagerUI::printMenu(){
+ void MovieManagerUI::printMenu(){
     cout <<"Welcome to Movie Rental Kiosk!"<<endl;
     cout<< "----------"<<endl;
     cout<< "am: Add Movie"<<endl;
@@ -16,16 +16,45 @@ string MovieManagerUI::getCommand(){
     bool valid = false;
     while(not valid){
         cin >> command;
-        if(command == "am"|| command == "rm" || command == "rr"||command == "p" ||command == "q"){valid = true;}
+        toUpper(command);
+        if(command == "AM"|| command == "RM" || command == "RR"||command == "P" ||command == "Q"){valid = true;}
     }
     return command;
 }
 
 string MovieManagerUI::getMovieName(){
     string name;
-    
+    cout << "Enter the name of the movie: ";
     cin >> name;
+    cout << "\n";
     return name;
 }
-int getMovieCode();
-int getRenterID();
+string MovieManagerUI::getMovieCode(){
+    string code;
+     cout << "Enter the code of the movie: ";
+    cin >> code;
+    return code;
+}
+int MovieManagerUI::getRenterID(){
+    int id;
+     cout << "Enter RenterID: ";
+    cin >> id;
+    return id;
+}
+string MovieManagerUI::getRenterFirstName(){
+    string fname;
+     cout << "Enter the First Name of the renter: ";
+    cin >> fname;
+    return fname;
+}
+string MovieManagerUI::getRenterLastName(){
+    string lname;
+     cout << "Enter the Last Name of the renter: ";
+    cin >> lname;
+    return lname;
+}
+void MovieManagerUI::toUpper(string &command){
+    for_each(command.begin(), command.end(), [](char & c){
+        c = ::toupper(c);
+    });
+}
